@@ -1,0 +1,219 @@
+<html  lang="zh">
+<head>
+	<meta charset="utf_8">
+	<title>主页</title>
+</head>
+<a href="https://www.z4a.net/images/2022/12/01/9ce345c034ab595709846535a27e35ff.gif"
+target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;"
+	src="https://www.z4a.net/images/2023/03/02/forkme_right_darkblue_12162182a3bba1ff64bcff.png"
+alt="微信公众号"></a>
+
+
+<a href="../cn/index.html"
+target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;"
+	src="../assets/images/切换主页.png"
+alt="切换主页"></a>
+
+
+ 
+
+
+
+<style>
+	body{
+		background: url(../assets/images/背景1.jpg) ;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.box{
+		width: 50%;
+		min-width: 390px;
+		height: 44px;
+		background-color: rgb(255, 255, 255);
+		margin-top: 170px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		border-radius: 20px;
+		overflow: hidden;
+		transition: 0.4s;	}
+	.moving{
+		animation: 0.5s move forwards linear;
+	}
+	@keyframes move {
+		0%{transform: translateX(0);}
+		50%{transform: translateX(30px);}
+		100%{transform: translateX(-30px);}
+	}
+	input{
+		margin-left: 20px;
+		width:80%;
+		height: 30px;
+		outline: none;
+		border: none;
+		font-size: 18px;
+		background-color: rgba(0,0,0,0);
+		color: whitesmoke;
+	}
+	.button{
+		width: 60px;
+		height: 44px;
+		background-color: rgb(0,120,212);
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+	.button:hover{
+		background-color: rgb(0, 145, 255);
+	}
+	.Engines{
+		margin-top: 90px;
+		opacity: 0.9;
+	}
+	.Engines span{
+		color: white;
+	}
+	.Engines div{
+		display: none;
+		
+	}
+	.tips{
+		margin-top: 15px;
+		border-radius: 20px;
+		width: 50%;
+		min-width: 390px;
+		min-height: 300px;
+		max-height: 300px;
+		background-color: rgba(74,74,74,0.5);
+		overflow-x: hidden;
+		overflow-y: scroll;
+		transition: 0.53;
+		visibility: hidden;
+	}
+	.tips p{
+		margin: 0;
+		color: white;
+		font-size: 16px;
+		padding-left: 20px;
+		height: 33px;
+		width: 100%;
+		line-height: 33px;
+	}
+	.tips p:hover{
+		cursor: pointer;
+		background-color: rgb(72,72,72);
+	}
+	::-webkit-scrollbar {
+	    display: none;
+	}
+	
+</style>
+<body>
+<div class="Engines" title="单击切换搜索引擎">
+	<div id="micro" style="display: block;">
+		<svg t="1662780140858" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5205" width="62" height="62"><path d="M64.9 65h424.5v425.2H64.9z" fill="#e0620d" p-id="5206" data-spm-anchor-id="a313x.7781069.0.i22" class=""></path><path d="M533.6 65H959v425.2H533.6z" fill="#15b33b" p-id="5207" data-spm-anchor-id="a313x.7781069.0.i32" class=""></path><path d="M533.6 534.4h424.6V959H533.6z" fill="#ea9518" p-id="5208" data-spm-anchor-id="a313x.7781069.0.i35" class=""></path><path d="M64.9 534.4h424.5v424.5H64.9z" fill="#1296db" p-id="5209" data-spm-anchor-id="a313x.7781069.0.i34" class=""></path></svg>
+	</div>
+	<div id="baidu">
+		<svg t="1662780422949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6319" width="62" height="62"><path d="M603.131557 677.800163l-41.990347 0s-5.385661-3.331885-5.38566-12.722765l0-88.091315-47.356565 0.604774 0 98.002035s4.563946 25.894763 38.895869 25.894763l79.526241 0L626.821095 583.066569 603.130533 583.066569l0 94.733594zM461.021955 583.066569l-44.414559 0s-40.995693-1.62194-55.359842 44.867883c-4.975315 31.022551 4.457522 42.857087 6.100952 46.771234 1.665942 3.872191 14.904455 26.782993 48.155766 26.782993l69.205175 0L484.709447 523.293207l-23.688515-0.520863 0 60.294225zm0 94.733594l-35.023678 0s-21.570271-0.606821-28.211528-25.442462c-3.331885-11.096732 0.520863-21.699208 2.25025-26.693965 1.62194-4.977361 8.847505-18.909675 23.774473-18.909675l37.210483 0 0 71.046102zM511.51393 66.691935c-245.932202 0-445.285552 199.375863-445.285553 445.308065S265.582751 957.308065 511.51393 957.308065s445.285552-199.375863 445.285552-445.308065S757.446132 66.691935 511.51393 66.691935zm27.151383 236.326427c3.546779-32.385595 42.271756-82.078367 73.316819-74.982762 30.934546 7.05365 59.167564 48.113811 53.435003 83.420944-5.582135 35.369555-33.683147 82.034365-77.406974 76.323293-43.656289-5.582135-53.543474-45.127803-49.344848-84.761475zm-91.575672-89.12997c32.711006 0 59.167564 37.663808 59.167565 84.154655 0 46.533826-26.457582 84.198657-59.167565 84.198657-32.667004 0-59.167564-37.663808-59.167564-84.198657-0.001023-46.489824 26.500561-84.154655 59.167564-84.154655zM262.553765 413.284721s6.989181-69.292156 54.928006-73.576739c38.096666-3.26537 66.135256 38.422078 69.054749 62.263066 1.796926 15.467273 9.842159 86.252433-49.389873 98.994641-59.103096 12.700253-81.080643-55.683207-74.592882-87.680968zm450.888153 298.394041c-32.407084 76.365248-150.830217 36.68962-150.830217 36.68962s-43.676755-14.018272-94.342691-2.791579c-50.688449 11.338233-94.38874 7.031137-94.388741 7.031137s-59.277058 1.428535-76.172867-73.467245c-16.874319-74.982762 59.167564-116.042923 64.859194-123.030058 5.602601-7.095605 45.082778-33.943067 70.39528-76.345806 25.440415-42.444694 101.504812-76.387761 155.048285 7.009648 39.483246 56.593949 107.130949 108.947318 107.130949 108.947318s50.665936 39.612183 18.300808 115.956965zm-9.886161-173.97945c-64.878636 1.473561-67.626213-43.829228-67.626213-76.279291 0-34.008558 6.987135-82.10088 59.21259-82.100879 52.136428 0 66.177212 50.947346 66.177211 67.865667 0 17.026792 7.117095 89.088014-57.763588 90.514503z" p-id="6320" data-spm-anchor-id="a313x.7781069.0.i41" class="selected" fill="#1296db"></path></svg>		
+	</div>
+	<div id="360">
+		<svg t="1662789930682" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7476" width="62" height="62"><path d="M680.416757 459.07972 573.090357 459.07972 573.090357 351.753319c0-30.312376-24.800849-55.113225-55.113225-55.113225l0 0c-30.312376 0-55.113225 24.800849-55.113225 55.113225l0 107.326401L355.537506 459.07972c-30.312376 0-55.113225 24.800849-55.113225 55.113225l0 0c0 30.312376 24.800849 55.113225 55.113225 55.113225l107.326401 0 0 107.326401c0 30.312376 24.800849 55.113225 55.113225 55.113225l0 0c30.312376 0 55.113225-24.800849 55.113225-55.113225L573.090357 569.30617l107.326401 0c30.312376 0 55.113225-24.800849 55.113225-55.113225l0 0C735.529983 483.880569 710.729134 459.07972 680.416757 459.07972z" p-id="7477" fill="#0e932e"></path><path d="M511.771803 76.893274c-239.630682 0-435.106726 195.47195-435.106726 435.103656 0 94.841042 30.642904 182.753277 82.499969 254.379595 13.024641 20.517289 32.243355 42.841737 59.010999 66.24168 77.483722 71.033823 180.62787 114.488521 293.595758 114.488521 103.163591 0 198.122313-36.252669 272.847202-96.638991 0.907673-0.728594 1.814322-1.456165 2.716878-2.192945 0.475837-0.38988 0.954745-0.775666 1.425466-1.165546 22.744004-18.662035 43.799552-39.940664 62.682621-63.755046 59.665915-74.495668 95.433536-168.876222 95.433536-271.356244C946.877505 272.370341 751.405555 76.893274 511.771803 76.893274zM829.009004 763.432473c-66.787102 37.028335-141.208069 57.060577-188.409091 66.422805-90.930989 18.152429-200.3654-12.568247-240.679571-31.591509-68.068282-32.116465-89.183182-64.577784-124.267235-97.739045l-20.070104-19.195178c-47.562249-44.911886-98.123808-39.531342-113.870444-4.776793-22.51069-50.329269-35.056424-106.024755-35.056424-164.555823 0.001023-92.624561 31.394011-178.147376 84.049255-246.521626 68.905346-40.120766 147.548474-61.442374 196.569958-71.193459 91.102904-18.147312 200.535269 12.568247 240.679571 31.592532 68.240197 32.115442 89.182158 64.576761 124.43915 97.91403l20.070104 19.023262c47.082318 44.544519 95.120404 38.818097 109.209284 4.267187 22.610974 50.424436 35.21299 106.243743 35.21299 164.91705C916.885424 606.854345 883.972826 694.26516 829.009004 763.432473z" p-id="7478" fill="#0e932e"></path></svg>
+	</div>
+	<div id="sougou">
+		<svg t="1662790053621" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7820" width="62" height="62"><path d="M723 308.4c21.4 10.8 45.6 21.6 38.6 50.8-7.9 33.4-37.6 32.6-63.5 29.4-54-6.8-107.3-19.3-161.4-24-29.3-2.5-71-2-76.3 34.1-5.4 36.2 36.5 35.8 61.9 43.9 60.8 19.3 124.2 31.1 181.8 60.1 47.8 24.1 79.2 58.2 78 115-1.3 58.5-39.2 88.3-87.6 107.5-55.4 22.1-114.2 30.1-179.8 30.1-58.7-1.7-255.9-25.2-246.4-92.4 6.6-46.3 50.5-30.5 82.6-25.8 56.1 8.2 112.1 20.6 168.5 23.1 27.6 1.2 71.6 0.5 76.8-35.4 5.9-40.9-39.6-40.2-66.4-47.8-59.2-16.9-119.2-31-175.6-56.4-48.9-22.1-82.4-55.8-83.4-111.5C268 242.3 597.1 244.6 723 308.4z m160.1 475.2c11.2-16.3 32.6-19.6 47.7-7.5 15.1 12.1 18.2 35.1 7 51.3-28.4 41.1-62.3 78.1-100.9 109.8-5.8 4.8-13.1 7.5-20.6 7.5-10.9-0.1-21-5.5-27.1-14.5-11.4-16.1-8.5-39.1 6.5-51.4 33.3-27.5 62.8-59.5 87.4-95.2zM511.5 65.2C757.7 65.2 958 265.5 958 511.7c0 75.4-19 149.5-55.4 215.5-6.1 11.1-17.7 18.2-30.4 18.5-12.7 0.3-24.6-6.3-31.1-17.2-6.5-10.9-6.8-24.4-0.6-35.5 30.5-55.5 46.6-117.9 46.5-181.3 0-207.1-168.5-375.6-375.6-375.6S135.9 304.6 135.9 511.7s168.5 375.6 375.6 375.6c59.5 0.2 118.2-13.9 171.1-41.1 11.3-6 25-5.5 35.8 1.4 10.8 6.9 17 19.1 16.3 31.9-0.7 12.8-8.3 24.2-19.8 29.8-62.9 32.3-132.6 49.1-203.3 48.9C265.3 958.2 65 757.9 65 511.7S265.3 65.2 511.5 65.2z m0 0" fill="#1296db" p-id="7821"></path></svg>
+	</div>
+	<!-- <span>Search</span> -->
+</div>
+<div class="box">
+	<input type="text">
+	<div class="button">
+		<svg t="1662734833509" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2361" width="25" height="25"><path d="M966.4 924.8l-230.4-227.2c60.8-67.2 96-156.8 96-256 0-217.6-176-390.4-390.4-390.4-217.6 0-390.4 176-390.4 390.4 0 217.6 176 390.4 390.4 390.4 99.2 0 188.8-35.2 256-96l230.4 227.2c9.6 9.6 28.8 9.6 38.4 0C979.2 950.4 979.2 934.4 966.4 924.8zM102.4 441.6c0-185.6 150.4-339.2 339.2-339.2s339.2 150.4 339.2 339.2c0 89.6-35.2 172.8-92.8 233.6-3.2 0-3.2 3.2-6.4 3.2-3.2 3.2-3.2 3.2-3.2 6.4-60.8 57.6-144 92.8-233.6 92.8C256 780.8 102.4 627.2 102.4 441.6z" p-id="2362" fill="#ffffff"></path></svg>
+	</div>
+</div>
+<div class="tips">
+	<p>搜索建议：</p>
+</div>
+<script type="text/javascript">
+		var q='';
+		var regu = "^[ ]+$";
+		var re = new RegExp(regu);
+		var box = document.querySelector('.box');
+		var v = document.querySelector('input');
+		var btn = document.querySelector('.button');
+		var engines_list = ['https://cn.bing.com/search?q=','http://www.baidu.com/baidu?wd=','https://www.so.com/s?ie=utf-8&fr=none&src=home_www&ssid=&q=','https://www.sogou.com/web?query='];
+		var engines_ico = document.querySelector('.Engines').children;
+		var ico_num = 0;
+		var tip_box = document.querySelector('.tips');
+		console.log(tip_box)
+		for(let i=0;i<engines_ico.length;i++){
+			engines_ico[i].onclick=function(){
+				engines_ico[i].style.display = 'none';
+				if(i<3){
+					engines_ico[i+1].style.display = 'block';
+					ico_num=i+1
+				}else{
+					engines_ico[0].style.display = 'block';
+					ico_num=0
+				}
+			};
+		}
+		v.onkeyup = function(){
+			if(v.value==""||re.test(v.value)){
+				tip_box.style.visibility='hidden';
+			}else{
+				var val = this.value.trim()
+				var script = document.createElement('script');
+				tip_box.style.visibility='inherit';
+				script.src = "http://suggestion.baidu.com/su?wd="+val+"&cb=getdata";
+				document.body.appendChild(script);
+			}
+			
+		}
+		var getdata = function(data){
+			var re = '';
+			for(let i=0;i<data.s.length;i++){
+				re+='<p>'+data.s[i]+'</p>'
+			}
+			tip_box.innerHTML = re
+			var tips_list = document.querySelector('.tips').children
+			for(let i=0;i<tips_list.length;i++){
+				tips_list[i].onclick = function(){
+					q = tips_list[i].innerText
+					search(q)
+				}
+			}
+		}
+		function search(q){
+			if(q){
+				location.href=engines_list[ico_num]+q;
+			}else{
+				if(v.value==""||re.test(v.value)){
+					box.style.backgroundColor ='#CD3333'
+					setTimeout(function(){box.style.backgroundColor ='rgb(74,74,74)'},400)
+					box.classList.add('moving')
+					setTimeout(function(){box.classList.remove('moving')},400)
+					v.value='';
+				}else{
+					location.href=engines_list[ico_num]+v.value;
+				}
+			}
+		}
+		btn.onclick = function(){
+			search()
+		}
+		document.onkeydown = function(event){
+			if(event.keyCode==13){
+				search()
+			}
+		}
+</script>
+</body>
+</html>
+
+
